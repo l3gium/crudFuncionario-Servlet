@@ -14,9 +14,9 @@
 ||Column Name|Data Type|Length|Allow Nulls|
 |:-:|-|-|-|:-:|
 |:key:|id|int|||
-||name|varchar|100|✔️|
-||password|varchar|100|✔️|
-||email|varchar|100|✔️|
+||name|varchar|100|❌|
+||password|varchar|100|❌|
+||email|varchar|100|❌|
 
 <hr>
 
