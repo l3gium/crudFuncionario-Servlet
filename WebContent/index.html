@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Novo Funcionario</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    
+    header {
+      background: #2c3e50;
+      padding: 20px;
+      text-align: center;
+      border-radius: 5px;
+      margin-bottom: 30px;
+    }
+    
+    header h1 {
+      color: #fff;
+      font-size: 24px;
+    }
+    
+    main {
+      max-width: 500px;
+      background: #fff;
+      margin: 0 auto;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 5px;
+    }
+    
+    .form-group {
+      margin-bottom: 15px;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+    
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    
+    .submit-btn {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      background: #3498db;
+      color: #fff;
+      text-align: center;
+      border: none;
+      border-radius: 3px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      margin-top: 10px;
+    }
+    
+    .submit-btn:hover {
+      background: #2980b9;
+    }
+    
+    .links {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+    
+    .links a {
+      text-decoration: none;
+      color: #3498db;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    
+    .links a:hover {
+      color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <!-- desenvolvido por Beatriz Bastos e Miguel Luizatto -->
+
+  <header>
+    <h1>Cadastro de Funcionario</h1>
+  </header>
+  
+  <main>
+    <form action="SaveServlet" method="post">
+      <div class="form-group">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      
+      <button type="submit" class="submit-btn">Cadastrar Funcionario</button>
+    </form>
+    
+    <div class="links">
+      <a href="ViewServlet">Ver Funcionarios</a>
+      <a href="creditos.html">Desenvolvedores</a>
+    </div>
+  </main>
+</body>
+</html>
